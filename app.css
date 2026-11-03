@@ -9,7 +9,8 @@
   so sketch.js can read them.
 */
 @theme static {
-  --color-display-bg: #111111;
+  --color-display-ground: #1a1918;
+  --color-display-studs: #a88861;
 }
 
 /* Preview only: scales the full-size Display to fit your browser window. */
