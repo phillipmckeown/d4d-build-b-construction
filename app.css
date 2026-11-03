@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/*
+  Your design tokens. Write these by hand from your Figma variables panel.
+  One line per variable. A Figma name like color/chalk/500 becomes --color-chalk-500.
+  Replace the example line below with your own tokens.
+
+  "static" keeps every token in output.css, even ones no class uses yet,
+  so sketch.js can read them.
+*/
+@theme static {
+  --color-display-bg: #111111;
+}
+
+/* Preview only: scales the full-size Display to fit your browser window. */
+#display canvas {
+  display: block;
+  height: 100vh !important;
+  width: auto !important;
+  margin: 0 auto;
+}

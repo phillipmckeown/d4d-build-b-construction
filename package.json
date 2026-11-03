@@ -1,0 +1,12 @@
+{
+  "name": "d4d-build-b",
+  "private": true,
+  "scripts": {
+    "dev": "tailwindcss -i ./app.css -o ./output.css --watch",
+    "build": "tailwindcss -i ./app.css -o ./output.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.3",
+    "tailwindcss": "4.3.3"
+  }
+}
