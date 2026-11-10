@@ -14,7 +14,7 @@
     at least 24 by 24 CSS pixels. A public touchscreen should go well past that.
   -->
   <main id="touchscreen">
-    <h1>[Your program name]</h1>
+    <h1>Construction & Remodeling</h1>
 
     <section aria-labelledby="weather-heading">
       <h2 id="weather-heading">Try different weather</h2>
@@ -33,6 +33,9 @@
         <label for="wind">Wind speed</label>
         <input type="range" id="wind" data-variable="wind_speed_10m" data-unit="mph" min="0" max="40" step="1" value="0">
         <output for="wind"></output>
+           <label for="direction">Wind direction</label>
+           <input type="range" id="direction" data-variable="wind_direction_10m" data-unit="°" min="0" max="360" step="1" value="270">
+           <output for="direction"></output>
       </div>
 
       <div>
