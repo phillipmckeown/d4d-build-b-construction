@@ -6,3 +6,7 @@
 - Do not edit the @theme block in app.css. The designer writes it.
 - Do not add libraries. p5.js 2.3.4 is already loaded in index.html.
 - After changing classes, run `npm run build` so output.css is current. output.css is committed.
+- channel.js, weather.js, and touchscreen.js are shared course files. Do not edit them.
+- In sketch.js, read weather with Weather.get(name, fallback). Do not call Open-Meteo directly.
+- In sketch.js, respond to touchscreen controls with Channel.on("control", ...).
+- Add touchscreen controls in touchscreen.html using data-variable or data-control attributes.

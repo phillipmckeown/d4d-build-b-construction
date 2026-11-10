@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Build B Touchscreen</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+<body>
+  <!--
+    The touchscreen page. It is landscape and sits beside the Display.
+    Style it with your own tokens from app.css.
+    Every control needs a visible label, and every touch target needs to be
+    at least 24 by 24 CSS pixels. A public touchscreen should go well past that.
+  -->
+  <main id="touchscreen">
+    <h1>[Your program name]</h1>
+
+    <section aria-labelledby="weather-heading">
+      <h2 id="weather-heading">Try different weather</h2>
+
+      <!-- role="status" announces changes between live and chosen weather. -->
+      <p id="weather-status" role="status">Waiting for the Display</p>
+      <p id="weather-countdown"></p>
+
+      <!--
+        One slider per weather input you want visitors to change.
+        data-variable is the Open-Meteo name from weather.js.
+        min and max come from the "Range in" column of your mapping table.
+        Add or remove sliders to match your SPEC.md.
+      -->
+      <div>
+        <label for="wind">Wind speed</label>
+        <input type="range" id="wind" data-variable="wind_speed_10m" data-unit="mph" min="0" max="40" step="1" value="0">
+        <output for="wind"></output>
+      </div>
+
+      <div>
+        <label for="temperature">Temperature</label>
+        <input type="range" id="temperature" data-variable="temperature_2m" data-unit="°F" min="-10" max="95" step="1" value="40">
+        <output for="temperature"></output>
+      </div>
+
+      <button type="button" id="back-to-live">Back to live weather</button>
+    </section>
+
+    <!--
+      Your second control. Replace this example.
+      Buttons in the same data-control group act as a set: the one tapped
+      is marked pressed. Your sketch.js listens for the control name.
+    -->
+    <section aria-labelledby="control-heading">
+      <h2 id="control-heading">[Your control]</h2>
+      <button type="button" data-control="example" data-value="first" aria-pressed="true">[First option]</button>
+      <button type="button" data-control="example" data-value="second" aria-pressed="false">[Second option]</button>
+    </section>
+
+    <!-- If your Open-Meteo credit goes on the touchscreen, keep this line. If it goes on the Display, delete it. -->
+    <p><a href="https://open-meteo.com/">Weather data by Open-Meteo.com</a></p>
+  </main>
+
+  <script src="channel.js"></script>
+  <script src="touchscreen.js"></script>
+</body>
+</html>

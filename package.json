@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "dev": "tailwindcss -i ./app.css -o ./output.css --watch",
-    "build": "tailwindcss -i ./app.css -o ./output.css --minify"
+    "build": "tailwindcss -i ./app.css -o ./output.css --minify",
+    "serve": "npx --yes http-server@14.1.1 -c-1"
   },
   "devDependencies": {
     "@tailwindcss/cli": "4.3.3",
