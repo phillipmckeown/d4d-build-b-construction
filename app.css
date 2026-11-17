@@ -11,6 +11,10 @@
 @theme static {
   --color-display-ground: #1a1918;
   --color-display-studs: #a88861;
+  --color-display-chalk-500: #87ACE7;
+  --spacing-display-chalk-stroke: 20px;
+  --spacing-display-stud: 20px;
+  --spacing-display-inch: 12px;
 }
 
 /* Preview only: scales the full-size Display to fit your browser window. */
